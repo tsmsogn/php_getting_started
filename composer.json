@@ -1,0 +1,17 @@
+{
+    "name": "tsmsogn/php_getting_started",
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "tsmsogn",
+            "email": "tsmsogn@gmail.com"
+        }
+    ],
+    "require": {},
+    "scripts": {
+        "test": "phpunit tests"
+    }
+}

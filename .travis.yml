@@ -13,4 +13,4 @@ php:
   - 7.3
 
 script:
-  - phpunit tests/
+  - ./vendor/bin/phpunit tests/

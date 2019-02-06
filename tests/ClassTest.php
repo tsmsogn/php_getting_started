@@ -1,42 +1,9 @@
 <?php
 
-class Animal
-{
+namespace App\Test;
 
-    public function touchHot()
-    {
-        return self::jump();
-    }
-
-    public function jump()
-    {
-        return __METHOD__;
-    }
-
-    public function openEyes()
-    {
-        return $this->see();
-    }
-
-    public function see()
-    {
-        return __METHOD__;
-    }
-}
-
-class Human extends Animal
-{
-
-    public function jump()
-    {
-        return __METHOD__;
-    }
-
-    public function see()
-    {
-        return __METHOD__;
-    }
-}
+use App\Human;
+use PHPUnit_Framework_TestCase;
 
 class ClassTest extends PHPUnit_Framework_TestCase
 {

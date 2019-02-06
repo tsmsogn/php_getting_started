@@ -1,14 +1,9 @@
 <?php
 
-class Foo
-{
-    public $bar;
+namespace App\Test;
 
-    public function __construct($bar = null)
-    {
-        $this->bar = $bar;
-    }
-}
+use App\Foo;
+use PHPUnit_Framework_TestCase;
 
 class OperatorTest extends PHPUnit_Framework_TestCase
 {

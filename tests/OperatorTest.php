@@ -1,15 +1,20 @@
 <?php
-class Foo {
+
+class Foo
+{
     public $bar;
 
-    public function __construct($bar = null) {
+    public function __construct($bar = null)
+    {
         $this->bar = $bar;
     }
 }
 
-class OperatorTest extends PHPUnit_Framework_TestCase {
+class OperatorTest extends PHPUnit_Framework_TestCase
+{
 
-    public function testComparision() {
+    public function testComparision()
+    {
         $foo1 = new Foo(1);
         $foo2 = new Foo();
         $foo3 = new Foo();
@@ -20,7 +25,8 @@ class OperatorTest extends PHPUnit_Framework_TestCase {
         $this->assertTrue($foo2 == $foo3);
     }
 
-    public function testReference() {
+    public function testReference()
+    {
         $a =& $c;
         $b = $c;
         $c = 1;

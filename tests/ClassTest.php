@@ -12,7 +12,7 @@ class ClassTest extends PHPUnit_Framework_TestCase
     {
         $human1 = new Human();
 
-        $this->assertEquals('Human::see', $human1->openEyes());
-        $this->assertEquals('Animal::jump', $human1->touchHot());
+        $this->assertEquals('App\Human::see', $human1->openEyes());
+        $this->assertEquals('App\Animal::jump', $human1->touchHot());
     }
 }

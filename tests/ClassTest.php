@@ -15,4 +15,10 @@ class ClassTest extends PHPUnit_Framework_TestCase
         $this->assertEquals('App\Human::see', $human1->openEyes());
         $this->assertEquals('App\Animal::jump', $human1->touchHot());
     }
+
+    public function test_self_vs_static()
+    {
+        $this->assertInstanceOf('App\Animal', Human::get_self());
+        $this->assertInstanceOf('App\Human', Human::get_static());
+    }
 }

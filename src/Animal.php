@@ -5,6 +5,16 @@ namespace App;
 class Animal
 {
 
+    public static function get_self()
+    {
+        return new self();
+    }
+
+    public static function get_static()
+    {
+        return new static();
+    }
+
     public function touchHot()
     {
         return self::jump();
